@@ -12,7 +12,6 @@ const App = createClass({
     e.preventDefault();
     if (this.refs.newItemForm[0].value) {
       const newList = this.refs.newItemForm[0].value;
-
       this.setState({
         list: [...this.state.list, newList],
       });
